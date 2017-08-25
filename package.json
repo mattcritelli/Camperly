@@ -1,0 +1,19 @@
+{
+  "name": "camperly",
+  "version": "1.0.0",
+  "description": "An application for finding fun new campgrounds.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattcritelli/Camperly.git"
+  },
+  "author": "Matt Critelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattcritelli/Camperly/issues"
+  },
+  "homepage": "https://github.com/mattcritelli/Camperly#readme"
+}
