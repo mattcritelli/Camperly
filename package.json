@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/mattcritelli/Camperly/issues"
   },
-  "homepage": "https://github.com/mattcritelli/Camperly#readme"
+  "homepage": "https://github.com/mattcritelli/Camperly#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4"
+  }
 }
