@@ -1,14 +1,33 @@
 <% include partials/header %>
 
-<h1>List of all campgrounds page</h1>
-
-<a href="/campgrounds/new">Add new campground</a>
-
-<% campgrounds.forEach(function(campground){ %>
-  <div>
-    <h4> <%= campground.name %> </h4>
-    <img src="<%= campground.image %>"/>
+<div class="container">
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Welcome to Camperly</h1>
+      <p>View top campgrounds from around the world!</p>
+      <p>
+        <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add new campground</a>
+      </p>
+    </div>
   </div>
-<% }) %>
+
+  <div class="row">
+    <div class="col-12-lg">
+      Our most popular campgrounds
+    </div>
+  </div>
+  <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+    <% campgrounds.forEach(function(campground){ %>
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+          <img src="<%= campground.image %>"/>
+          <div class="caption">
+            <h4><%= campground.name %></h4>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+  </div>
+</div>
 
 <% include partials/footer %>
